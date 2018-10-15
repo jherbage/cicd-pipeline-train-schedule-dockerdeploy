@@ -18,7 +18,7 @@ pipeline {
                 script {
                     app = docker.build("jasonherbage/train-schedule")
                     app.inside {
-                        sh 'ls /tmp'
+                        sh 'hostname'
                     }
                 }
             }
