@@ -1,5 +1,7 @@
 pipeline {
-    agent { label: 'jenkinsnode1'}
+    agent {
+        label 'jenkinsnode1'
+    }
     stages {
         stage('Build') {
             steps {
